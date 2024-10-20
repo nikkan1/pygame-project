@@ -1,30 +1,30 @@
-# Соул Кнайт
+# Saul Knight
 
-***ВАЖНО: перед запуском файла game.py необходимо установить пакеты из requirements.txt! Файл
-game.exe (альтернативный запуск) корректно запускается только через терминал (командную строку).***
+*** IMPORTANT: you must install the packages from requirements.txt before running the game.py file! File
+game.exe (alternative startup) can be correctly launched only via terminal (command line).***
 
-## Геймплей
+## Gameplay
 
-Ходить на WASD или с помощью стрелок. Направлять оружие и стрелять с помощью мыши (LKM).
-Взаимодействовать с предметами на 'E'. Пауза во время игры на SPACE.
+Walk on WASD or with the arrows. Point weapons and shoot with the mouse (LKM).
+Interact with objects with 'E'. Pause during gameplay with SPACE.
 
-## Структура проекта
+## Project structure
 
-Есть два способа запуска: game.exe или game.py. **Файл game.exe возможно запустить только через терминал!**
-Для game.py необходим интерпретатор python и пакеты, указанные в requirements.txt .
+There are two ways to run: game.exe or game.py. **Game.exe can only be run via terminal!
+Game.py requires the python interpreter and the packages specified in requirements.txt .
 
-Запускаемый файл - game.py. Вспомогательные классы и функции раскиданы по одной или по несколько по
-файлам с соответствующими названиями.
+The file to run is game.py. Auxiliary classes and functions are scattered one by one or several by
+files with corresponding names.
 
-#### Подробнее:
+#### Read more:
 
-+ game.py - импортирует и запускает main_menu. Содержит в себе функции генерации уровня, обновления спрайтов,
-цикл уровня и функцию завершения работы всего.
-+ mainmenu.py - содержит одну функцию с основным циклом главного меню, через которое осуществляется выбор уровня и т.д.
-+ button_main - содержит функцию, показывающую меню паузы во время уровня.
-+ button_d - содержит класс, описывающий кнопку, используемую в меню паузы.
-+ constants.py - содержит основные игровые константы, группы спрайтов и т.п.
-+ my_sprites.py - игровые спрайты (игрок, враги и базовый для них класс).
-+ tiles_camera.py - тайлы и камера.
-+ bullet.py - пуля, которой стреляют игрок и злодеи.
-+ data_loader.py - функции загрузки изображений и уровня из текстовых файлов.
++ game.py - imports and runs main_menu. Contains functions for level generation, sprite update,
+level loop and a function to terminate everything.
++ mainmenu.py - contains one function with the main main main menu loop, through which level selection, etc. is done.
++ button_main - contains a function that shows the pause menu during the level.
++ button_d - contains a class describing the button used in the pause menu.
++ constants.py - contains basic game constants, sprite groups, etc.
++ my_sprites.py - game sprites (player, enemies and their base class).
++ tiles_camera.py - tiles and camera.
++ bullet.py - bullet, which shoots the player and villains.
++ data_loader.py - functions for loading images and level from text files.
